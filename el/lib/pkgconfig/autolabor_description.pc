@@ -1,0 +1,8 @@
+prefix=/home/autolabor/lty_ws/devel
+
+Name: autolabor_description
+Description: Description of autolabor_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/autolabor/lty_ws/devel/lib 
+Requires: 

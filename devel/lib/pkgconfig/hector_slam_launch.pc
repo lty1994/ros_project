@@ -1,0 +1,8 @@
+prefix=/home/autolabor/catkin_ws/devel
+
+Name: hector_slam_launch
+Description: Description of hector_slam_launch
+Version: 0.3.5
+Cflags: 
+Libs: -L/home/autolabor/catkin_ws/devel/lib 
+Requires: 

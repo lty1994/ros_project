@@ -1,0 +1,8 @@
+{
+	"remoteArgs": {
+		"host": "10.28.137.153",
+		"user": "autolabor",
+		"keyfile": "/home/autolabor/.ssh/id_rsa",
+		"cwd": "/home/autolabor/lty_ws"
+	}
+}

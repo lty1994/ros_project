@@ -1,0 +1,8 @@
+prefix=/home/autolabor/lty_ws/devel
+
+Name: simulation_launch
+Description: Description of simulation_launch
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/autolabor/lty_ws/devel/lib 
+Requires: 

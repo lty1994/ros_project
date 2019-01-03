@@ -1,0 +1,8 @@
+prefix=/home/autolabor/lty_ws/devel
+
+Name: autolabor_simulation_lidar
+Description: Description of autolabor_simulation_lidar
+Version: 0.0.1
+Cflags: -I/home/autolabor/lty_ws/src/simulation/autolabor_simulation_lidar/include
+Libs: -L/home/autolabor/lty_ws/devel/lib 
+Requires: 

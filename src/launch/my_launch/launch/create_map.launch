@@ -1,0 +1,58 @@
+<launch>    
+
+    <!-- 键盘遥控 -->
+    <!--node name="keyboard_control" pkg="autolabor_keyboard_control" type="keyboard_control_node">
+        <param name="linear_min" value="0.3" />
+        <param name="linear_max" value="0.75" />
+        <param name="linear_step" value="0.2" />
+
+        <param name="angular_min" value="0.314" />
+        <param name="angular_max" value="1.57" />
+        <param name="angular_step" value="0.314" />
+    </node-->
+
+    <!-- Gmapping建图 -->
+    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+        <param name="map_frame" value="map"/>
+        <param name="odom_frame" value="odom"/>
+        <param name="base_frame" value="base_link"/>
+
+        <param name="map_update_interval" value="1.0"/>
+        <param name="maxUrange" value="6.0"/>
+        <param name="maxRange" value="8.0"/>
+
+	    <!--param name="lstep" value="0.05"/>
+	    <param name="astep" value="0.05"/-->
+
+        <param name="linearUpdate" value="0.1"/>
+        <param name="angularUpdate" value="0.2"/>
+        <param name="iterations" value="6"/>
+
+        <param name="lsigma" value="0.075"/>
+        <param name="ogain" value="1.0"/>
+
+        <param name="srr" value="0.2"/>
+        <param name="srt" value="0.3"/>
+        <param name="str" value="0.3"/>
+        <param name="stt" value="0.5"/>
+
+        <param name="particles" value="8"/>
+
+        <param name="xmin" value="-5.0"/>
+        <param name="ymin" value="-5.0"/>
+        <param name="xmax" value="5.0"/>
+        <param name="ymax" value="5.0"/>
+        <param name="delta" value="0.1"/>
+
+        <param name="minimumScore" value="30"/>
+        <param name="temporalUpdate" value="3.0"/>
+
+        <param name="resampleThreshold" value="0.5"/>
+    </node>
+
+    
+
+    
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find autolabor_box_launch)/rviz/create_map.rviz" />
+    
+</launch>
