@@ -48,7 +48,7 @@
     </node-->
 
     
-    <!--组件坐标系转换-->
+    <!--组件静态坐标系转换-->
     <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser" args="0.065 0.0 0.245 1.57 0.0 0.0 /base_link /lidar 50" />
 
 </launch>
